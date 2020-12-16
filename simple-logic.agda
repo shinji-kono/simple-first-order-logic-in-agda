@@ -44,7 +44,7 @@ r [ n / v ] = r
 (x ∧ y) [ n / v ] = (x [ n / v ] ) ∧  (x [ n / v ])
 (x ∨ y) [ n / v ] = (x [ n / v ] ) ∨  (x [ n / v ])
 (¬ x) [ n / v ] = ¬ (x [ n / v ] )
-(all x => y) [ n / v ] = all x => (y [ n / v ])
+(all x => y) [ n / v ] = all x => (y [ n / v ])    -- we should protect variable x from replacement
 (∃ x => y) [ n / v ] =  ∃ x =>    (y [ n / v ])
 
 {-# TERMINATING #-} 

@@ -36,7 +36,7 @@ M amap pmap all0 sbst s = m s where
    (e ∧ e₁) [ xv / v ]     = (  e [ xv / v ]) ∧ (  e₁ [ xv / v ])
    (e ∨ e₁) [ xv / v ]     = (  e [ xv / v ]) ∨ (  e₁ [ xv / v ])
    (¬ e) [ xv / v ]        = ¬ (  e [ xv / v ])
-   (All x => e) [ xv / v ]   = All x =>   (  e [ xv / v ])
+   (All x => e) [ xv / v ]   = All x =>   (  e [ xv / v ])   -- we should protect variable x from replacement
    (Exist x => e) [ xv / v ] = Exist x => (  e [ xv / v ])
 
    m :  Statement  → Bool
